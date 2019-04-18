@@ -18,6 +18,12 @@
     <script>
     console.log("Hai peeps");
     alert("FBI: stay right where you are");
+    var compute = document.querySelector(".submit");
+        
+    functtion test(){
+        document.querySelector(".results").innerHTML = parseInt(document.getElementById("num1").value);
+    }
+    compute.addEventListener("click", test);
         </script>
     </body>
 </html>

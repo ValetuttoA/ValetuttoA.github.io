@@ -1,10 +1,10 @@
 <!doctype  html>
 <html>
     <head>
-        <title>Somebody's Web Page</title>
+        <title>How to Maf</title>
     </head>
     <body>
-        <h1>Now youre just somebody that i used to know XP</h1>
+        <h1>Now you can pass maf class! XP</h1>
         <!--
         <img src=*kitty.jpg*)
         -->
@@ -24,6 +24,21 @@
             <input type="submit" value="submit" class="submit">
             <p class="results">nothing</p>    
         </div>
+        <div>
+            <label for="sideD"> Side D</label>
+            <input type="submit" value="submit" class="submit">
+            <p class="results">nothing</p>    
+        </div>
+        <div>
+            <label for="sideE"> Side E</label>
+            <input type="submit" value="submit" class="submit">
+            <p class="results">nothing</p>    
+        </div>
+        <div>
+            <label for="sideF"> Side F</label>
+            <input type="submit" value="submit" class="submit">
+            <p class="results">nothing</p>    
+        </div>
     <script>
     console.log("Hai peeps");
     alert("FBI: stay right where you are");
@@ -37,7 +52,10 @@
         console.log(b);
 
         var out = document.querySelector(".results");
-        var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        var c = a + b //could also use a - b, a * b, a/b
+        var d = a - b
+        var e = a * b
+        var f = a / b;
         
         out.innerHTML = parseFloat(c);
     }

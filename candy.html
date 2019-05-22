@@ -10,7 +10,7 @@
             <input type="radio" name="question1" value="8">8<br>
             <input type="radio" name="question1" value="12">12<br>
             <input type="radio" name="question1" value="20">20<br>
-            <p class="question1">Nothing yet</p>
+            <p class="out1">Nothing yet</p>
         </div>
          <h1>Why do cats hate water?</h1>
         <div>
@@ -18,7 +18,7 @@
             <input type="radio" name="question2" value="fur coat">they dont want to ruin their fur coat<br>
             <input type="radio" name="question2" value="exposer">their species hasn't been exposed to water long enough and are not familiar enough with it<br> <!-- answer -->
             <input type="radio" name="question2" value="milk">they like using milk as a substitute<br>
-            <p class="question2">Nothing yet</p>
+            <p class="out2">Nothing yet</p>
         </div>
          <h1>What is a group of kittens called?</h1>
         <div>
@@ -26,7 +26,7 @@
             <input type="radio" name="question3" value="kindle">kindle<br> <!-- answer -->
             <input type="radio" name="question3" value="cats">cats<br> 
             <input type="radio" name="question3" value="yarn">yarn<br>
-            <p class="question3">Nothing yet</p>
+            <p class="out3">Nothing yet</p>
         </div>
          <h1>Why do cats love boxes?</h1>
         <div>
@@ -34,22 +34,75 @@
             <input type="radio" name="question4" value="taste">they like the taste of cardboard<br>
             <input type="radio" name="question4" value="color">their favorite color is brown<br>
             <input type="radio" name="question4" value="comfort">they just think cardboard is comfortable<br> <!-- answer -->
-            <p class="question4">Nothing yet</p>
+            <p class="out4">Nothing yet</p>
         </div>
         
         <input type="submit" value="submit" class="submit">
-        <p class="out">Nothing yet</p>
+        <p class="out5">Nothing yet</p>
     <script>
-        var submit = document.querySelector(".submit")
-        var out = document.querySelector(".out")
+        var submit = document.querySelector(".submit");
+        var out1 = document.querySelector(".out1");
+        var out2 = document.querySelector(".out2");
+        var out3 = document.querySelector(".out3");
+        var out4 = document.querySelector(".out4");
+        var out5 = document.querySelector(".out5");
         
         function reply(){
-            var radios = document.getElementsByName("response");
+            // question1
+            var radios1 = document.getElementsByName("question1");
             for(var i = 0; i < radios.length; i++){
                 if(radios[i].checked){
-                    out.innerHTML = radios[i].value;
+                    if(radios[i].value == "15"){
+                        out1.innerHTML = "Correct";
+                    }
+                    else{
+                        out1.innerHTML = "Wrong";
+                    }
                     break;
                 }
             }
+            
+            //question2
+            var radios2 = document.getElementsByName("question2");
+            for(var i = 0; i < radios.length; i++){
+                if(radios[i].checked){
+                    if(radios[i].value == "exposer"){
+                        out2.innerHTML = "Correct";
+                    }
+                    else{
+                        out2.innerHTML = "Wrong";
+                    }
+                    break;
+                }
+            }
+            
+            //question3
+            var radios3 = document.getElementsByName("question3");
+            for(var i = 0; i < radios.length; i++){
+                if(radios[i].checked){
+                    if(radios[i].value == "kindle"){
+                        out3.innerHTML = "Correct";
+                    }
+                    else{
+                        out3.innerHTML = "Wrong";
+                    }
+                    break;
+                }
+            }
+
+            //question4
+            var radios4 = document.getElementsByName("question4");
+            for(var i = 0; i < radios.length; i++){
+                if(radios[i].checked){
+                    if(radios[i].value == "comfort"){
+                        out4.innerHTML = "Correct";
+                    }
+                    else{
+                        out4.innerHTML = "Wrong";
+                    }
+                    break;
+                }
+            }
+
         }
         submit.addEventListener("click", reply;)

@@ -1,112 +1,52 @@
 <html>
-    
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <title>Cat Quiz</title>
-    </head>
-    <body>
-        <h1 class="q1">What is the average life span for an indoor cat?</h1>
-        <div>
-            <input type="radio" name="question1" value="15">15<br> <!-- answer -->
-            <input type="radio" name="question1" value="8">8<br>
-            <input type="radio" name="question1" value="12">12<br>
-            <input type="radio" name="question1" value="20">20<br>
-            <p class="out1"> </p>
-        </div>
-         <h1>Why do cats hate water?</h1>
-        <div>
-            <input type="radio" name="question2" value="monster">they think it's a monster<br>
-            <input type="radio" name="question2" value="fur coat">they dont want to ruin their fur coat<br>
-            <input type="radio" name="question2" value="exposer">their species hasn't been exposed to water long enough and are not familiar enough with it<br> <!-- answer -->
-            <input type="radio" name="question2" value="milk">they like using milk as a substitute<br>
-            <p class="out2"> </p>
-        </div>
-         <h1>What is a group of kittens called?</h1>
-        <div>
-            <input type="radio" name="question3" value="fluff">fluff balls<br>
-            <input type="radio" name="question3" value="kindle">kindle<br> <!-- answer -->
-            <input type="radio" name="question3" value="cats">cats<br> 
-            <input type="radio" name="question3" value="yarn">yarn<br>
-            <p class="out3"> </p>
-        </div>
-         <h1>Why do cats love boxes?</h1>
-        <div>
-            <input type="radio" name="question4" value="first life">every cat was a box in their first life<br>
-            <input type="radio" name="question4" value="taste">they like the taste of cardboard<br>
-            <input type="radio" name="question4" value="color">their favorite color is brown<br>
-            <input type="radio" name="question4" value="comfort">they just think cardboard is comfortable<br> <!-- answer -->
-            <p class="out4"> </p>
-        </div>
-        
-        <input type="submit" value="submit" class="submit">
-        <p class="out5"> </p>
-    <script>
-        var submit = document.querySelector(".submit");
-        var out1 = document.querySelector(".out1");
-        var out2 = document.querySelector(".out2");
-        var out3 = document.querySelector(".out3");
-        var out4 = document.querySelector(".out4");
-        var out5 = document.querySelector(".out5");
-        var counter = 0;
-        
-        function reply(){
-            // question1
-            var radios1 = document.getElementsByName("question1");
-            for(var i = 0; i < radios1.length; i++){
-                if(radios1[i].checked){
-                    if(radios1[i].value == "15"){
-                        out1.innerHTML = "Correct";
-                        counter++;
-                    }
-                    else{
-                        out1.innerHTML = "Wrong";
-                    }
-                    break;
-                }
-            }
-            //question2
-            var radios2 = document.getElementsByName("question2");
-            for(var i = 0; i < radios2.length; i++){
-                if(radios2[i].checked){
-                    if(radios2[i].value == "exposer"){
-                        out2.innerHTML = "Correct";
-                        counter++;
-                    }
-                    else{
-                        out2.innerHTML = "Wrong";
-                    }
-                    break;
-                }
-            }
-            //question3
-            var radios3 = document.getElementsByName("question3");
-            for(var i = 0; i < radios3.length; i++){
-                if(radios3[i].checked){
-                    if(radios3[i].value == "kindle"){
-                        out3.innerHTML = "Correct";
-                        counter++;
-                    }
-                    else{
-                        out3.innerHTML = "Wrong";
-                    }
-                    break;
-                }
-            }
-            //question4
-            var radios4 = document.getElementsByName("question4");
-            for(var i = 0; i < radios4.length; i++){
-                if(radios4[i].checked){
-                    if(radios4[i].value == "comfort"){
-                        out4.innerHTML = "Correct";
-                        counter++;
-                    }
-                    else{
-                        out4.innerHTML = "Wrong";
-                    }
-                    break;
-                }
-            }
-            out5.innerHTML = "You got " + counter + " correct out of 4.";
-        }
-        submit.addEventListener("click", reply);
-    </script>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Cat Quiz</title>
+</head>
+
+<body>
+    <h1 class="q1">What is the average life span for an indoor cat?</h1>
+    <div>
+        <input type="radio" name="question1" value="15">15<br>
+        <!-- answer -->
+        <input type="radio" name="question1" value="8">8<br>
+        <input type="radio" name="question1" value="12">12<br>
+        <input type="radio" name="question1" value="20">20<br>
+        <p class="out1">Nothing yet</p>
+    </div>
+    <h1>Why do cats hate water?</h1>
+    <div>
+        <input type="radio" name="question2" value="monster">they think it's a monster<br>
+        <input type="radio" name="question2" value="fur coat">they dont want to ruin their fur coat<br>
+        <input type="radio" name="question2" value="exposer">their species hasn't been exposed to water long enough and are not familiar enough with it<br>
+        <!-- answer -->
+        <input type="radio" name="question2" value="milk">they like using milk as a substitute<br>
+        <p class="out2">Nothing yet</p>
+    </div>
+    <h1>What is a group of kittens called?</h1>
+    <div>
+        <input type="radio" name="question3" value="fluff">fluff balls<br>
+        <input type="radio" name="question3" value="kindle">kindle<br>
+        <!-- answer -->
+        <input type="radio" name="question3" value="cats">cats<br>
+        <input type="radio" name="question3" value="yarn">yarn<br>
+        <p class="out3">Nothing yet</p>
+    </div>
+    <h1>Why do cats love boxes?</h1>
+    <div>
+        <input type="radio" name="question4" value="first life">every cat was a box in their first life<br>
+        <input type="radio" name="question4" value="taste">they like the taste of cardboard<br>
+        <input type="radio" name="question4" value="color">their favorite color is brown<br>
+        <input type="radio" name="question4" value="comfort">they just think cardboard is comfortable<br>
+        <!-- answer -->
+        <p class="out4">Nothing yet</p>
+    </div>
+
+    <input type="submit" value="submit" class="submit">
+    <p class="out5">Nothing yet</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

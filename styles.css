@@ -13,31 +13,31 @@ body{
 }
 p {
     font-size: x-large;
-    font-family: fantasy;
+    font-family: sans-serif;
     color: blue;
 }
 
 .q1{
     font-size: x-large;
-    font-family: cursive;
+    font-family: sans-serif;
     color: green;
 }
 
 .q2{
     font-size: x-large;
-    font-family: cursive;
+    font-family: sans-serif;
     color: green;
 }
 
 .q3{
     font-size: x-large;
-    font-family: cursive;
+    font-family: sans-serif;
     color: green;
 }
 
 .q4{
     font-size: x-large;
-    font-family: cursive;
+    font-family: sans-serif;
     color: green;
 }
 

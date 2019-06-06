@@ -13,31 +13,31 @@ body{
 }
 p {
     font-size: x-large;
-    font-family: sans-serif;
+    font-family: monospace;
     color: blue;
 }
 
 .q1{
     font-size: x-large;
-    font-family: sans-serif;
+    font-family: monospace;
     color: green;
 }
 
 .q2{
     font-size: x-large;
-    font-family: sans-serif;
+    font-family: monospace;
     color: green;
 }
 
 .q3{
     font-size: x-large;
-    font-family: sans-serif;
+    font-family: monospace;
     color: green;
 }
 
 .q4{
     font-size: x-large;
-    font-family: sans-serif;
+    font-family: monospace;
     color: green;
 }
 
